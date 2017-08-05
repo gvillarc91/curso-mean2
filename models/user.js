@@ -12,5 +12,6 @@ var UserSchema = Schema({
 	image: String
 });
 
+
 //Pluraliza el user el solo
 module.exports = mongoose.model('User', UserSchema);
