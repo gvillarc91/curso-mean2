@@ -20,45 +20,27 @@
 	"buffers":
 	[
 		{
-			"file": "controllers/user.js",
+			"file": "controllers/artist.js",
 			"settings":
 			{
-				"buffer_size": 3819,
+				"buffer_size": 365,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "index.js",
+			"file": "models/artist.js",
 			"settings":
 			{
-				"buffer_size": 454,
-				"encoding": "UTF-8",
+				"buffer_size": 253,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app.js",
+			"file": "routes/artist.js",
 			"settings":
 			{
-				"buffer_size": 346,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "services/jwt.js",
-			"settings":
-			{
-				"buffer_size": 397,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "models/user.js",
-			"settings":
-			{
-				"buffer_size": 291,
+				"buffer_size": 281,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -77,6 +59,31 @@
 			"settings":
 			{
 				"buffer_size": 871,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 426,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "services/jwt.js",
+			"settings":
+			{
+				"buffer_size": 397,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "controllers/user.js",
+			"settings":
+			{
+				"buffer_size": 3817,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -115,21 +122,27 @@
 	"expanded_folders":
 	[
 		"/C/wamp64/www/curso-mean2",
-		"/C/wamp64/www/curso-mean2/uploads",
-		"/C/wamp64/www/curso-mean2/uploads/users"
+		"/C/wamp64/www/curso-mean2/controllers",
+		"/C/wamp64/www/curso-mean2/middlewares",
+		"/C/wamp64/www/curso-mean2/models",
+		"/C/wamp64/www/curso-mean2/routes",
+		"/C/wamp64/www/curso-mean2/services"
 	],
 	"file_history":
 	[
+		"/C/wamp64/www/curso-mean2/node_modules/async/during.js",
+		"/C/wamp64/www/curso-mean2/controllers/user.js",
+		"/C/wamp64/www/curso-mean2/index.js",
+		"/C/wamp64/www/curso-mean2/app.js",
+		"/C/wamp64/www/curso-mean2/services/jwt.js",
+		"/C/wamp64/www/curso-mean2/models/user.js",
+		"/C/wamp64/www/curso-mean2/middlewares/authenticated.js",
+		"/C/wamp64/www/curso-mean2/routes/user.js",
 		"/C/wamp64/www/curso-mean2/uploads/users/2xbbFGKdbuvLxdz9XNE2ejoz.jpg",
 		"/C/wamp64/www/curso-mean2/package.json",
-		"/C/wamp64/www/curso-mean2/app.js",
-		"/C/wamp64/www/curso-mean2/models/user.js",
 		"/C/wamp64/www/curso-mean2/models/artist.js",
 		"/C/wamp64/www/curso-mean2/models/song.js",
 		"/C/wamp64/www/curso-mean2/models/album.js",
-		"/C/wamp64/www/curso-mean2/routes/user.js",
-		"/C/wamp64/www/curso-mean2/index.js",
-		"/C/wamp64/www/curso-mean2/controllers/user.js",
 		"/C/wamp64/www/curso-mean2/curso-mean2.sublime-project",
 		"/C/wamp64/www/curso-mean2/package-lock.json",
 		"/C/wamp64/curso-mean2/proyecto-curso-mean2.sublime-project",
@@ -151,6 +164,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"jwt"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -168,24 +182,24 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "controllers/user.js",
+					"file": "controllers/artist.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3819,
+						"buffer_size": 365,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3406,
-								3406
+								141,
+								147
 							]
 						],
 						"settings":
@@ -193,27 +207,169 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2016.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "index.js",
+					"file": "models/artist.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 454,
+						"buffer_size": 253,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								145,
+								145
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "routes/artist.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								272,
+								272
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "middlewares/authenticated.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 697,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								686,
+								690
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "routes/user.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 871,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								643,
+								653
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 426,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								404,
+								404
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "services/jwt.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 397,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								159,
+								166
 							]
 						],
 						"settings":
@@ -229,143 +385,32 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app.js",
+					"buffer": 7,
+					"file": "controllers/user.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 346,
+						"buffer_size": 3817,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1895,
+								1900
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1165.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "services/jwt.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 397,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								114,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "models/user.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 291,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								13,
-								13
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "middlewares/authenticated.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 697,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								575,
-								575
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "routes/user.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 871,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								848,
-								848
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -373,7 +418,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -410,7 +455,7 @@
 	"project": "curso-mean2.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 40.0
 	},
 	"save_all_on_build": true,
 	"select_file":
