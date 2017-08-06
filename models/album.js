@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var AlbumSchema = Schema({
-	titulo: String,
+	title: String,
 	description: String,
 	year: Number,
 	image: String,
