@@ -15,6 +15,14 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
 //Configurar cabeceras http
+app.use((req, res, next) => {
+	res.header('Acces-Control-Allow-Origin', '*');
+	res.header('Acces-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Resquest-Method');
+	res.header('Acces-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+	res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
+
+	next();
+});
 
 //Rutas base
 app.use('/api', user_routes);
