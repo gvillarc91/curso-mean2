@@ -6,7 +6,6 @@ var bcrypt = require('bcrypt-nodejs');
 var User = require('../models/user');
 var jwt = require('../services/jwt');
 
-
 function pruebas(req, res){
 	res.status(200).send({
 		message: "Probando una accion del controlador de usuarios del api rest con Node"
@@ -28,30 +27,37 @@ function saveUser(req, res){
 
 	if(params.password){
 		//encriptar contraseña y guardar dato
-		
-		bcrypt.hash(params.password, null, null, function(err, hash){
-			
-			user.password = hash;
-			
-			if(user.name != null && user.surname != null && user.email != null){
-				//guardar el usuario
-				user.save((err, userStored) => {
-					if(err){
-						res.status(500).send({message: 'Error al guardar el usuario'});
-					}else{
-						if(!userStored)
-						{
-							res.status(404).send({message: 'No se ha registrado el usuario'});
-						}else{
-							res.status(200).send({user: userStored});
-						}
 
-					}
-				});
-			}else{
-				res.status(200).send({message: 'Rellena todos los campos'});
-			}
+
+        bcrypt.genSalt(10, function(err, salt) {
+
+        	if(err){ return next();};
+
+					bcrypt.hash(params.password, salt, null, function(err, hash){
+									
+						user.password = hash;
+						
+						if(user.name != null && user.surname != null && user.email != null){
+							//guardar el usuario
+							user.save((err, userStored) => {
+								if(err){
+									res.status(500).send({message: 'Error al guardar el usuario'});
+								}else{
+									if(!userStored)
+									{
+										res.status(404).send({message: 'No se ha registrado el usuario'});
+									}else{
+										res.status(200).send({user: userStored});
+									}
+
+								}
+							});
+
+						}else{
+							res.status(200).send({message: 'Rellena todos los campos'});
+						}
 		});
+});
 	}else{
 		res.status(200).send({message: 'Introduce la contraseña'});
 	}
@@ -63,7 +69,8 @@ function loginUser(req, res){
 	var params = req.body;
 
 	var email = params.email;
-	var password = params.password;
+   var password = params.password;
+
 
 	User.findOne( {email: email.toLowerCase()}, (err, user) => {
 
@@ -91,7 +98,7 @@ function loginUser(req, res){
 							}
 
 						}else{
-							res.status(404).send({message: 'El usuario no a podido loguearse'});
+							res.status(404).send({message: 'El usuario no ha podido loguearse' });
 						}
 
 					});
