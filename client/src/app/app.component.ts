@@ -23,7 +23,6 @@ export class AppComponent implements OnInit{
   	}
 
   	ngOnInit(){
-      debugger;
       this.identity = this._userService.getIdentity();
       this.token = this._userService.getToken();
 
@@ -86,4 +85,12 @@ export class AppComponent implements OnInit{
 	  	}
   	);
   }
+
+    logout(){
+     localStorage.removeItem('identity');
+     localStorage.removeItem('token');
+     localStorage.clear();
+     this.identity = null;
+     this.token = null;
+   }
 }
