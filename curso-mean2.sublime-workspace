@@ -51,8 +51,24 @@
 			"file": "client/src/app/app.component.html",
 			"settings":
 			{
-				"buffer_size": 1614,
+				"buffer_size": 2516,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/src/app/models/user.ts",
+			"settings":
+			{
+				"buffer_size": 207,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/src/app/app.component.spec.ts",
+			"settings":
+			{
+				"buffer_size": 1046,
 				"line_ending": "Unix"
 			}
 		},
@@ -60,17 +76,36 @@
 			"file": "client/src/app/app.component.ts",
 			"settings":
 			{
-				"buffer_size": 2469,
+				"buffer_size": 3531,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "api/controllers/user.js",
+			"settings":
+			{
+				"buffer_size": 3995,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "client/src/app/services/user.service.ts",
 			"settings":
 			{
-				"buffer_size": 1173,
+				"buffer_size": 1432,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "api/package.json",
+			"settings":
+			{
+				"buffer_size": 584,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -156,8 +191,12 @@
 	[
 		"/C/wamp64/www/curso-mean2",
 		"/C/wamp64/www/curso-mean2/api",
+		"/C/wamp64/www/curso-mean2/api/controllers",
 		"/C/wamp64/www/curso-mean2/client",
-		"/C/wamp64/www/curso-mean2/client/src"
+		"/C/wamp64/www/curso-mean2/client/src",
+		"/C/wamp64/www/curso-mean2/client/src/app",
+		"/C/wamp64/www/curso-mean2/client/src/app/models",
+		"/C/wamp64/www/curso-mean2/client/src/app/services"
 	],
 	"file_history":
 	[
@@ -237,6 +276,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"user",
+			"user_register",
+			"onSubmitRegister",
+			"oblig",
+			"setitem",
+			"localstorage",
+			"locals",
+			"local",
 			"encode",
 			"jwt"
 		],
@@ -256,7 +303,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -302,15 +349,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1614,
+						"buffer_size": 2516,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								750,
+								754
 							]
 						],
 						"settings":
@@ -319,27 +366,56 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 160.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "client/src/app/app.component.ts",
+					"file": "client/src/app/models/user.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2469,
+						"buffer_size": 207,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								37,
-								37
+								68,
+								68
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "client/src/app/app.component.spec.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1046,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -353,24 +429,84 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "client/src/app/services/user.service.ts",
+					"buffer": 4,
+					"file": "client/src/app/app.component.ts",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1173,
+						"buffer_size": 3531,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1889,
+								1889
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 765.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "api/controllers/user.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3995,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1354,
+								1356
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "client/src/app/services/user.service.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1432,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								815,
+								815
 							]
 						],
 						"settings":
@@ -380,10 +516,40 @@
 							"use_tab_stops": false
 						},
 						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "api/package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 584,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								217,
+								217
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
