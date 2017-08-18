@@ -24,6 +24,14 @@
 				<span *ngIf="!email.valid && email.touched">El email es obligatorio</span>
 			</p>
 
+			<div class="image_for_edit" *ngIf="user.image && user.image != 'null'">
+				<img src=""/>
+			</div>
+			<p>
+				<label>Sube tu foto:</label>
+				<input type="file" placeholder="Subir imagen..." />
+			</p>
+
 			<input type="submit" value="Actualizar mis datos" class="btn btn-primary" required />
 
 		</form>
