@@ -57,7 +57,7 @@ html, body{
 }
 
 #user_logged .user-image img{
-
+	width: 57px;
 }
 
 .btn-logout{
