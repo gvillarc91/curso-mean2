@@ -112,8 +112,7 @@ function deleteArtist(req, res){
 			if(!artistRemoved){
 				res.status(404).send({message: 'No se ha podido eliminar el artista'});
 			}else{
-				res.status(404).send({artistRemoved});
-				
+						
 				Album.find({ artist: artistRemoved._id}).remove((err, albumRemoved) => {
 
 					if(err){
