@@ -104,7 +104,7 @@ function deleteArtist(req, res){
 
 	var artistId = req.params.id;
 
-	Artist.findByIdAndRemove(artistId, (err, artistRemoved) => {
+	 Artist.findByIdAndRemove(artistId, (err, artistRemoved) => {
 		
 		if(err){
 			res.status(500).send({message: 'Error al eliminar el artista'});

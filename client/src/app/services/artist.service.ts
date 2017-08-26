@@ -52,7 +52,7 @@ export class ArtistService{
 			.map(res => res.json());
 	}
 
-	deleteArtist(token, id: string){
+	deleteArtist(token, id:string){
 
 		let headers = new Headers({
 			'Content-Type':'application/json',
@@ -60,7 +60,7 @@ export class ArtistService{
 		});
 
 		let options = new RequestOptions({headers: headers});
-		return this._http.delete(this.url + 'artists/' + id, options)
+		return this._http.delete(this.url + 'artist/' + id, options)
 			.map(res => res.json());
 
 	}
