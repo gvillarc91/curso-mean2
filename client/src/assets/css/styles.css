@@ -82,9 +82,11 @@ html, body{
 	cursor:pointer;
 }
 
-.artist_image_for_edit img{
+.artist_image_for_edit img,
+.album_image_for_edit img{
 	width: 150px;
 }
+
 .artist-list{
 	margin:0px;
 	padding: 0px;
