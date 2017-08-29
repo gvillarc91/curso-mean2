@@ -19,7 +19,7 @@
 		<label>Descripcion</label>
 		<textarea #description="ngModel" name="description" [(ngModel)]="artist.description" class="form-control" required>
 		</textarea> 
-		<span *ngIf="!description.valid && description.touched">El nombre es obligatorio</span>
+		<span *ngIf="!description.valid && description.touched">La descripción es obligatoria</span>
 	</p>
 
 	<div *ngIf="is_edit">
