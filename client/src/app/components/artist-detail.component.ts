@@ -4,12 +4,15 @@ import {Router, ActivatedRoute, Params} from '@angular/router';
 import {GLOBAL} from '../services/global';
 import {UserService} from '../services/user.service';
 import {ArtistService} from '../services/artist.service';
+import {AlbumService} from '../services/album.service';
+
 import {Artist} from '../models/artist';
+import {Album} from '../models/album';
 
 @Component({
 	selector: 'artist-detail',
 	templateUrl: '../views/artist-detail.html',
-	providers: [UserService, ArtistService]
+	providers: [UserService, ArtistService, AlbumService]
 })
 
 export class ArtistDetailComponent implements OnInit{
@@ -20,12 +23,14 @@ export class ArtistDetailComponent implements OnInit{
 	public token;
 	public url: string;
 	public alertMessage;
+	public albums: Album[];
 
 	constructor(
 		private _route: ActivatedRoute,
 		private _router: Router,
 		private _userService: UserService,
 		private _artistService: ArtistService,
+		private _albumService: AlbumService
 
 	){
 		this.identity= this._userService.getIdentity();
@@ -52,6 +57,21 @@ export class ArtistDetailComponent implements OnInit{
 							this.artist = response.artist;
 
 							//Sacar los albums del artista
+							this._albumService.getAlbums(this.token, response.artist._id).subscribe(
+								response =>{
+								
+									if(!response.albums){
+										this.alertMessage = "Este artista no tiene albums";
+									}else{
+										this.albums = response.albums;
+									}
+								},
+								error => {
+		              		      var errorMessage = <any>error;
+		                     	  var body = JSON.parse(error._body);
+		                     	 console.log(error);
+		         				 }
+							);
 						}
 					},
 					error => {
