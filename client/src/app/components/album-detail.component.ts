@@ -3,22 +3,19 @@ import {Router, ActivatedRoute, Params} from '@angular/router';
 
 import {GLOBAL} from '../services/global';
 import {UserService} from '../services/user.service';
-import {ArtistService} from '../services/artist.service';
 import {AlbumService} from '../services/album.service';
 
-import {Artist} from '../models/artist';
 import {Album} from '../models/album';
 
 @Component({
-	selector: 'artist-detail',
-	templateUrl: '../views/artist-detail.html',
-	providers: [UserService, ArtistService, AlbumService]
+	selector: 'album-detail',
+	templateUrl: '../views/album-detail.html',
+	providers: [UserService, AlbumService]
 })
 
-export class ArtistDetailComponent implements OnInit{
+export class AlbumDetailComponent implements OnInit{
 	
-	public artists: Artist[];
-	public artist: Artist;
+	public Album: Album;
 	public identity;
 	public token;
 	public url: string;
@@ -29,7 +26,6 @@ export class ArtistDetailComponent implements OnInit{
 		private _route: ActivatedRoute,
 		private _router: Router,
 		private _userService: UserService,
-		private _artistService: ArtistService,
 		private _albumService: AlbumService
 
 	){
@@ -39,14 +35,15 @@ export class ArtistDetailComponent implements OnInit{
 	}
 
 	ngOnInit(){
-		console.log('artist-edit-component.ts cargado');
-		//Llamar al metodo del api para sacar un artista en base a su id getArtist
+		console.log('album-detail-component.ts cargado');
 
-		this.getArtist();
+		//Sacar album de la BD
+		this.getAlbum();
 	}
 
-	getArtist(){
-		this._route.params.forEach((params: Params)=>{
+	getAlbum(){
+		console.log("El metodo funciona");
+		/*this._route.params.forEach((params: Params)=>{
 			let id = params['id'];
 			this._artistService.getArtist(this.token, id).subscribe(
 					response => {
@@ -82,31 +79,7 @@ export class ArtistDetailComponent implements OnInit{
 		         	 }
 			);
 		})
-	}
-
-	public confirmado;
-	onDeleteConfirm(id){
-		this.confirmado = id;
-	}
-
-	onCancelAlbum(){
-		this.confirmado = null;
-	}
-
-	onDeleteAlbum(id){
-		this._albumService.deleteAlbum(this.token, id).subscribe(
-				response =>{	
-						if(!response.albums){
-							this.alertMessage = "Error en el servidor";
-						}else{
-							this.getArtist();
-						}
-					},
-					error => {
-
-		         	}
-
-		);
+			*/
 	}
 
 
